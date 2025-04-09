@@ -25,6 +25,8 @@ if option == "Content-Based":
                 if data:
                     st.image(data['poster'], width=150)
                     st.markdown(f"**[{data['title']}]({data['imdb_url']})**", unsafe_allow_html=True)
+                    st.markdown(f"⭐ IMDb Rating: {data['rating']}/10")
+
                 else:
                     st.markdown(f"- {movie}")
 
