@@ -1,6 +1,6 @@
 import requests
 
-TMDB_API_KEY = "your_tmdb_api_key_here"
+TMDB_API_KEY = "4bbf84cd839ed501c3127fd8f874926a"
 
 def fetch_movie_data_tmdb(title):
     search_url = "https://api.themoviedb.org/3/search/movie"
