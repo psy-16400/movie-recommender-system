@@ -9,6 +9,7 @@ def fetch_movie_data_tmdb(title):
     if response['results']:
         movie = response['results'][0]
         poster_path = movie.get('poster_path')
+        poster_url = f"https://image.tmdb.org/t/p/w500{poster_path}" if poster_path else None
         imdb_id = fetch_imdb_id(movie['id'])
         return {
             'title': movie['title'],
