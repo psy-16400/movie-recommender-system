@@ -21,6 +21,7 @@ if option == "Content-Based":
         cols = st.columns(2)
         for i, movie in enumerate(recommendations):
             data = fetch_movie_data(movie)
+<<<<<<< HEAD
             if data:
                 with cols[i % 2]:
                     if data.get('poster'):
@@ -29,6 +30,16 @@ if option == "Content-Based":
                         st.write("No poster available.")
                     st.markdown(f"**[{data['title']}]({data['imdb_url']})**")
                     st.markdown(f"⭐ IMDb Rating: {data['rating']}/10")
+=======
+            with cols[i % 2]:
+                if data:
+                    st.image(data['poster'], width=150)
+                    st.markdown(f"**[{data['title']}]({data['imdb_url']})**", unsafe_allow_html=True)
+                    st.markdown(f"⭐ IMDb Rating: {data['rating']}/10")
+
+                else:
+                    st.markdown(f"- {movie}")
+>>>>>>> 4e3352db3f25dd789b393f0f0f18644824ea7df4
 
 elif option == "Collaborative Filtering":
     user_ids = ratings['userId'].unique()
