@@ -1,28 +1,28 @@
-# 🎬 Movie Recommendation System
+# Movie Recommendation System
 
 An AI-powered movie recommendation system that suggests top-rated films based on user preferences using both **Content-Based Filtering** and **Collaborative Filtering**. This web app is built with **Python**, **Streamlit**, **Scikit-learn**, **Surprise**, and **TMDb API** for real-time posters and IMDb links.
 
-🚀 **Live Demo**: [Click here to try it out](https://your-streamlit-app-link)
+**Live Demo**: https://movie-recommender-system-iez9ffmdhpcg8nmmf58qun.streamlit.app/
 
 ---
 
-## 🧠 Features
+## Features
 
-✅ **Two recommendation methods**:
+**Two recommendation methods**:
 - **Content-Based Filtering** using genres and cosine similarity
 - **Collaborative Filtering** using user-item matrix factorization (SVD)
 
-🎨 **Visual enhancements**:
+**Visual enhancements**:
 - Displays movie posters using **TMDb API**
 - Links directly to **IMDb movie pages**
 
-📊 Built for real-world performance:
+Built for real-world performance:
 - Uses **MovieLens 100K dataset**
 - Interactive and mobile-friendly UI with **Streamlit**
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Python**
 - **Pandas**, **Scikit-learn**, **Surprise**
